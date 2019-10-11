@@ -260,6 +260,7 @@ Method MountFile() Class zExcelXML
 	For nAtual := 1 To Len(::aConOrig)
 		cContAux := ::aConOrig[nAtual]
 		lPula := Iif(Chr(13)+Chr(10) $ cContAux, .T., .F.)
+		cMaskAux := ""
 		
 		//Procurando expressões e substituindo
 		For nExpre := 1 To Len(::aExpre)
